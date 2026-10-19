@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="js/ideas.js" defer></script>
+    <title>Генератор идей</title>
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="">
+        <nav class="header">
+            <a href="index.html">Главная</a>
+            <a href="test.html">Тест</a>
+            <a href="ideas.html">Генератор идей</a>
+        </nav>
+    </header>
+    <main>
+        <div class="ideas-start">
+            <h1>Идеальное <span>свидание</span></h1>
+            <p>Выберите язык любви и получите случайную идею для свидания, которая точно покорит ваше сердце.</p>
+            <div class="language-options">
+                <button class="language-option" type="button" data-lang="words">Слова поддержки</button>
+                <button class="language-option" type="button" data-lang="gifts">Подарки</button>
+                <button class="language-option" type="button" data-lang="time">Время вместе</button>
+                <button class="language-option" type="button" data-lang="help">Помощь</button>
+                <button class="language-option" type="button" data-lang="touch">Прикосновения</button>
+            </div>
+            <p class="hint hidden">Сначала выберите язык любви</p>
+            <button class="generate-button" type="button">Сгенерировать идею</button>
+        </div>
+        <div class="idea hidden">
+            <div class="idea-card">
+                <p class="idea-text"></p>
+                <button class="save-button" type="button" aria-label="Сохранить идею" aria-pressed="false">
+                    <img class="heart-outline" src="image/heart.png" alt="">
+                    <img class="heart-filled" src="image/heart-filled.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="saved">
+            <h2>Сохранённые идеи</h2>
+            <div class="saved-cards"></div>
+        </div>
+    </main>
+    <footer>
+        <p>Концепция основана на книге <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%8F%D1%82%D1%8C_%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2_%D0%BB%D1%8E%D0%B1%D0%B2%D0%B8?ysclid=mvf1kuogx0970214893">Гэри Чепмена «Пять языков любви»</a></p>
+        <img src="image/heart.png" alt="">
+        <nav class="footer">
+            <a href="index.html">Главная</a>
+            <a href="test.html">Тест</a>
+            <a href="ideas.html">Генератор идей</a>
+        </nav>
+    </footer>
+</body>
+</html>
