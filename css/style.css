@@ -152,6 +152,12 @@ main{
     box-shadow: 0 0 25px #4b828b4d;
     cursor: pointer;
 }
+.language-card:nth-child(even){
+    box-shadow: 0 0 15px #CE5A661A;
+}
+.language-card:nth-child(even):hover{
+    box-shadow: 0 0 25px #CE5A664D;
+}
 .language-icon{
     width: 30%;
     height: 80%;
